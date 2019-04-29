@@ -127,6 +127,7 @@ class Individual(object):
 
         # mutation
         child1.chromosome.mutate()
+        child1.performance = child1.evaluate()
 
         return child1
 
